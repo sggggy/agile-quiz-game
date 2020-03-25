@@ -1,0 +1,151 @@
+/*Creating my own CSS Style for the game*/
+
+/*Styles that apply to the entire page*/
+body {
+    background-color: #000000;
+}
+
+/*JUMBOTRON*/
+.jumbotron {
+    background-image: url("./background.jpg");
+    margin-bottom: 30px;
+    min-height: 50%;
+    background-repeat: no-repeat;
+    background-position: top;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    width: 100%
+}
+
+#gameRow {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#gameCol {
+    text-align: center;
+    border: 2px solid #ffffac;
+    border-radius: 5px;
+    padding: 30px;
+    min-height: 300px;
+    margin-bottom: 60px;
+}
+
+/*START BUTTON*/
+#startBtn {
+    background-color: #ffffac;
+    color: black;
+    border: 1px solid #000000;    
+    font-size: 200%;
+    letter-spacing: 2px;
+    padding: 20px 50px;
+    margin-top: 30px;
+}
+
+#startBtn:hover {
+    background-color: black;
+    color: #ffffac;
+    border: 1px solid #ffffac;    
+}
+
+#timeLeft {
+    font-size: 300%;
+    color: #ffffac;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+#currentQuestion {
+    color: white;
+    text-align: left;
+    font-size: 100%;
+    text-transform: uppercase;
+}
+
+.question {
+    color: white;
+    font-size: 200%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.answerList {
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: #ffffac;
+    font-size: 150%;
+    line-height: 2.5;
+    margin-bottom: 30px;
+}
+
+.thisChoice:hover {
+    background-color: #ffffac;
+    color: black;
+}
+
+
+#message {
+    color: white;
+    font-size: 125%;
+    margin-bottom: 10px;
+}
+
+#correctedAnswer {
+    color: #ffffac;
+    font-size: 100%;
+    text-transform: uppercase;   
+}
+
+#gif {
+    margin-bottom: 20px;
+    margin-top: 20px; 
+}
+
+.gifImg {
+    max-height: 200px;
+    max-width: 320px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+#gifCaption {
+    color: #ffffac;
+
+}
+
+.reset {
+    background-color: #ffffac;
+    color: black;
+    border: 1px solid #000000;
+    font-size: 200%;
+    letter-spacing: 2px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.reset:hover {
+    background-color: black;
+    color: #ffffac;
+    border: 1px solid #ffffac;    
+}
+
+#finalMessage {
+    color: white;
+    font-size: 200%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#correctAnswers, #incorrectAnswers, #unanswered {
+    color: #ffffac;
+    font-size: 150%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2;
+}

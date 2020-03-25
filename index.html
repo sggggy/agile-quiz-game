@@ -1,0 +1,102 @@
+<!-- Homework Assingment: JavaScript Assignment 2 Option One: Basic Quiz (Timed Form) -->
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- Linking Normalize.css -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
+
+	<!-- Setting the Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- BOOTSTRAP 3: Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+	
+	<!-- Linking my own CSS -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<title>敏捷领导力问答测试</title>
+	
+</head>
+<body>
+
+<!-- JUMBOTRON -->
+<div class="jumbotron">
+	<div class="container">
+		<h1></h1>
+		<p></p>
+	</div>
+</div>
+<!-- End Jumbotron -->
+
+<div class="container"> <!-- Begin Container -->
+
+	<div class="row"> <!-- Begin Row 1 -->
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- Begin Column 1A -->
+			<img src="./assets/images/title.png" alt="敏捷领导力问答测试" class="img-responsive center-block" id="title">
+		</div> <!-- End Column 1A -->
+	</div> <!-- End Row 1 -->
+
+	<div class="row" id="gameRow"> <!-- Begin Row 2 -->
+		<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-6 col-md-offset-3" id="startCol"> <!-- Begin Column 2A -->
+			<div id="startDiv">
+				<div id="start">
+					<button id="startBtn">开始挑战</button>
+				</div>
+			</div>
+		</div> <!-- End Column 2A -->
+	</div> <!-- End Row 2 -->
+
+	<div class="row" id="gameRow"> <!-- Begin Row 3 -->
+		<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-6 col-md-offset-3" id="gameCol"> <!-- Begin Column 3A -->
+
+			<!-- WHEN EACH QUESTION IS DISPLAYED -->
+			<div id="currentQuestion"></div>
+			<div id="timeLeft"></div>
+			<div class="question"></div>
+			<div class="answerList"></div>
+
+			<!-- WHEN EACH ANSWER IS DISPLAYED -->
+			<div id="message"></div>
+			<div id="correctedAnswer"></div>
+			<div id="gif"></div>
+			<div id="gifCaption"></div>
+
+			<!-- WHEN RESULTS ARE DISPLAYED -->
+			<div id="finalMessage"></div>
+			<div id="correctAnswers"></div>
+			<div id="incorrectAnswers"></div>
+			<div id="unanswered"></div>
+			<div id="startOverBtn"></div>
+
+		</div> <!-- End Column 3A -->
+
+	</div> <!-- End Row 3 -->
+
+</div> <!-- End Container -->
+
+<!-- Linking jQuery CDN -->
+<script src="./assets/js/jquery-3.2.1.min.js"></script>
+
+<!-- Linking my own JAVASCRIPT -->
+<script type="text/javascript" src="./assets/js/app.js"></script>
+
+<br>
+ <div align="center">
+		<a href="http://www.beian.miit.gov.cn">闽ICP备14014220号</a>
+    </div>
+	
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10543661-22"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-10543661-22');
+</script>
+</body>
+</html>
