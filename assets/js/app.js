@@ -27,10 +27,10 @@ $(document).ready(function(){
 	var answered; 
 	var userSelect;
 	var messages = {
-		correct: "恭喜你答对了！赞美太阳！",
-		incorrect: "That's not the right answer." + "<br>" + '"No. No. It Okay. Don\'t Be Cry"',
-		endTime: "Looks like you ran out of time!" + "<br>" + "But... It's never too late, it's never too late for now!",
-		finished: "感谢参加敏捷领导力基础知识测试挑战。"
+		correct: "回答正确",
+		incorrect: "回答错误" + "<br>" + '"摔倒是为了学习如何站起。别气馁，复盘并改进"',
+		endTime: "时间到" + "<br>" + "持续学习，持续改善,加油，奥利给",
+		finished: "感谢你完成敏捷领导力基础知识测试。只是做题是无法达到敏捷的，带着团队一起训练吧"
 	};
 
 	//All questions inside an array of objects
@@ -40,12 +40,132 @@ $(document).ready(function(){
 						"A. 确保所有团队成员都回答了“那三个问题”。",
 						"B. 收集状态与进度信息以报告管理层。",
 						"C. 他/她其实没有必要到场；但他/她需要确保开发团队有进行 Daily Scrum 仪式。",
-						"D. 记录下所有冲刺挤压表中的所有变更，包括新增的内容，并追踪燃尽图的状态。"
+						"D. 记录下所有冲刺积压表中的所有变更，包括新增的内容，并追踪燃尽图的状态。"
 						],
 			answer: 2,
-			image: "assets/images/Q1_Kenneth.gif",
+			image: "assets/images/q1_scrum_master_aligned.jpg",
 			answerText: "Scrum Master所要保障的是————开发团队成员在24小时内完成至少一次Daily Scrum仪式。"
 		},
+		{	question: "当多个团队开发同一款产品时，每个团队应该维护各自独立的产品积压表(Product Backlog)。",
+			answerList: [	
+						"A. 正确。",
+						"B. 错误。"
+						],
+			answer: 1,
+			image: "assets/images/q2_one_product_backlog.jpg",
+			answerText: "无论有多少个团队，一款产品只使用一个产品积压表。如果存在多个积压表，会导致开发团队无法判断需要优先完成什么内容。"
+		},
+		{	question: "选择下列对Scrum理解错误的一项。",
+			answerList: [	
+						"A. Scrum是一种基于经验主义的过程控制理论。",
+						"B. Scrum是一种可以只采用其中某些功能到工作环境中的方法。",
+						"C. Scrum是一种用来开发和维护复杂产品的框架。",
+						"D. Scrum是一种基于整个团队的知识与经验，来优化决策的框架。",
+						"E. Scrum并不会降低复杂，复杂会随着产品的成长而增加。通过不断明确增量的价值，团队能够快速发现和响应产品反馈，并迅速调整。"
+						],
+			answer: 1,
+			image: "assets/images/q3_scrum_framework.png",
+			answerText: "Scrum中的每个组件都服务某个具体的目的，有赖于大家对Scrum各个组件的充分运用，这样才能提升开发复杂产品的成功几率。"
+		},
+		{	question: "开发团队在冲刺中不应该被打断。冲刺目标需要保持完整性。这些条件可以促进创造力、质量和生产力。（以下哪个答案不对？）",
+			answerList: [	
+						"A. 如果发现增量比预期更多或更少，开发团队可以和产品负责人合作，移除或增加工作内容。",
+						"B. 随着产品积压表中的事项被不断拆解，冲刺计划表中的事项会变化，并可能随着工作开展而增长。",
+						"C. 冲刺积压表在冲刺计划会中已经明确，冲刺期间不能更改。",
+						"D. 当开发团队询问时，产品负责人可以协助阐明或优化冲刺。"
+						],
+			answer: 2,
+			image: "assets/images/q3_scrum_framework.png",
+			answerText: "冲刺积压表可视化开发团队为满足冲刺目标,所确定的所有工作内容。开发团队在冲刺期间会修改冲刺积压表，所以冲刺积压表会在冲刺期间不断变化。"
+		},		
+		{	question: "组织决定采用Scrum，但是管理层希望将术语更改为符合已经在使用的术语。 如果这样做会发生什么？（选择最佳答案）",
+			answerList: [	
+						"A. 没有新词汇来提醒大家变化正在发生，实际上几乎不会发生变化。",
+						"B. 组织可能不理解Scrum带来了什么变化，并且Scrum带来的利益可能会打水漂。",
+						"C. 管理层可能会感到不那么焦虑。",
+						"D. 以上全是。"
+						],
+			answer: 3,
+			image: "assets/images/q3_scrum_framework.png",
+			answerText: ""
+		},		
+		{	question: "开发团队需要为单次冲刺，从产品积压表中选择多少工作？（选择最佳答案）",
+			answerList: [	
+						"A. 所有开发工作和必须要做的测试。",
+						"B. 开发团队根据冲刺目标，尽可能选择产品积压表中已完成（DoD）梳理的项，并且告知产品负责人。",
+						"C. 尽可能的填满整个冲刺。",
+						"D. 分析，设计，开发，测试和文档整理。"
+						],
+			answer: 1,
+			image: "assets/images/q3_scrum_framework.png",
+			answerText: "每个冲刺的目的都是提供潜在发布可能的增量，这些功能要符合Scrum团队当前对“完成”的定义（DoD）。"
+		},	
+		{	question: "哪项陈述最能说明产品负责人的责任？（选择最佳答案）",
+			answerList: [	
+						"A. 指导开发团队。",
+						"B. 优化开发团队所做工作的价值。",
+						"C. 管理项目并确保工作符合对利益相关者的承诺。",
+						"D. 防止利益相关者分散开发团队的注意力。"
+						],
+			answer: 1,
+			image: "assets/images/q3_scrum_framework.png",
+			answerText: "产品负责人负责最大程度地提高产品和开发团队工作结果的价值。"
+		},
+		{	question: "冲刺的目的是为可工作的产品提供“完成”的增量。",
+			answerList: [	
+						"A. True",
+						"B. False"
+						],
+			answer: 0,
+			image: "assets/images/q3_scrum_framework.png",
+			answerText: "Scrum的核心是冲刺，即一个月或更短的时间盒，在此期间创建满足“DoD”，可用且可用于发布的产品增量。"
+		},
+		{	question: "CEO要求开发团队在正在进行的冲刺中添加“非常重要”的项目。开发团队应该做什么？（选择最佳答案）",
+			answerList: [	
+						"A. 无需任何调整即可将项目添加到当前的冲刺中。",
+						"B. 通知产品负责人，以便他/她可以与CEO沟通需求。",
+						"C. 将该项目添加到当前的冲刺中，并移除一个大小相等的项目。",
+						"D. 将项目添加到下一个冲刺中。"
+						],
+			answer: 1,
+			image: "assets/images/q3_scrum_framework.png",
+			answerText: "冲刺积压表中的是与产品负责人一起选出的最有价值项。这些项目符合冲刺目标。请勿进行任何危及冲刺目标的更改。Scrum团队外部的任何人都不能对开发团队（冲刺积压表）和产品所有者（产品积压表）进行更改。"
+		},		
+{	question: "下面哪个角色不属于一个Scrum团队？",
+			answerList: [	
+						"A. The Scrum Master",
+						"B. The Product Owner",
+						"C. The Development Team",
+						"D. 项目经理"
+						],
+			answer: 3,
+			image: "assets/images/q3_scrum_framework.png",
+			answerText: "Scrum团队由Scrum负责人（管理过程），产品负责人（决定要做什么）和开发团队（负责工作）组成。"
+},
+{	question: "冲刺的长度应为：（选择最佳答案）",
+			answerList: [	
+						"A. 足够短，以使产品负责人可接受业务风险。",
+						"B. 足够短，以将开发工作与其他业务事件同步。",
+						"C. 不超过一个月。",
+						"D. 上述都对。"
+						],
+			answer: 3,
+			image: "assets/images/q3_scrum_framework.png",
+			answerText: "所有这些选项都是确定冲刺长度时的合理考虑因素。"
+},
+{	question: "对于开发团队（Scrum团队内），建议的规模是多少？（选择最佳答案）",
+			answerList: [	
+						"A. 9 人 ",
+						"B. 最少 7 人",
+						"C. 7 ± 2 人",
+						"D. 3 到 9 人"
+						],
+			answer: 3,
+			image: "assets/images/q3_scrum_framework.png",
+			answerText: "最佳开发团队的规模应该小到足以保持敏捷，而大到足以完成重要的工作。少于三个人的开发团队会减少互动，并导致生产力低下。九个以上成员的团队会需要太多的协调。"
+},
+
+
 	];
 
 
@@ -96,7 +216,7 @@ $(document).ready(function(){
 		$(".question").html(triviaQuestions[currentQuestion].question);
 
 		//This function displays the new questions's answer options in multiple choice type
-		for(var i = 0; i <= 5; i++){
+		for(var i = 0; i <= 6; i++){
 
 			var choices = $("<div>");
 			choices.text(triviaQuestions[currentQuestion].answerList[i]);
@@ -118,7 +238,7 @@ $(document).ready(function(){
 
 	//This function is for the timer countdown
 	function countdown(){
-		seconds = 10;
+		seconds = 30;
 		$("#timeLeft").html("00:" + seconds);
 		answered = true;
 		//Sets a delay of one second before the timer starts
