@@ -8,7 +8,7 @@
 - [] 希望有人能PR支持随机答案排序的功能。
 - [] 希望有人能支持界面优化。
 
-![](https://static.teamtime.cc/quizxquiz/20200326140430.png)
+![](https://raw.githubusercontent.com/sggggy/agile-quiz-game/master/20200326140430.png)
 
 # 更新日志
 
