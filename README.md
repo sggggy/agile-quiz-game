@@ -17,3 +17,7 @@
 ### 访问地址
 
 [https://quizxquiz.teamtime.cc](https://quizxquiz.teamtime.cc)
+
+### 支持
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V412DB4)
