@@ -20,4 +20,6 @@
 
 ### 支持
 
+增强隐私的浏览器 ![Brave](https://raw.githubusercontent.com/sggggy/agile-quiz-game/master/brave-logotype-full-color.png)(https://brave.com/sgg909)
+
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V412DB4)
