@@ -195,7 +195,7 @@ $(document).ready(function(){
 						],
 			answer: 2,
 			image: "assets/images/q15.jfif",
-			answerText: "冲刺评审会是个时间盒，一个月长度的冲刺，会议时长为四小时对于较短的冲刺，时间通常也较短。"
+			answerText: "冲刺评审会是个时间盒，一个月长度的冲刺，会议时长为四小时。对于较短的冲刺，时间通常也较短。"
 },
 		{	question: "每日Scrum的时间盒是多少？",
 			answerList: [	
@@ -217,7 +217,7 @@ $(document).ready(function(){
 						],
 			answer: 3,
 			image: "assets/images/q17.jpg",
-			answerText: "“完成”的定义由开发组织约定，作为标准或准则的一部分，至少所有Scrum团队都必须遵循。" + "<br>" + "Scrum团队的开发团队可通过针对产品或上下文特定元素对其进行补充。" + "<br>" + "如果“完成”不是开发组织规定，则Scrum团队的开发团队必须定义适合该产品的“完成”定义。"
+			answerText: "“完成”定义由开发组织约定，作为标准或准则的一部分，所有Scrum团队都必须遵循。" + "<br>" + "Scrum团队的开发团队可通过针对产品或上下文特定元素对其进行补充。" + "<br>" + "如果“完成”不是开发组织规定，则Scrum团队的开发团队必须定义适合该产品的“完成”定义。"
 },
 		{	question: "谁应该最了解实现业务目标或发布的进度，并且能够最清楚地解释替代方案？",
 			answerList: [	
@@ -228,7 +228,7 @@ $(document).ready(function(){
 						],
 			answer: 0,
 			image: "assets/images/q18.jpg",
-			answerText: "产品负责人是负责管理产品积压表的唯一人员，其中包括产品待办清单对所有人都可见、透明和清晰，并说明Scrum团队下一步将要做什么。"
+			answerText: "产品负责人是负责管理产品积压表的唯一人员，负责保障产品积压表对所有人都可见、透明和清晰，并说明Scrum团队下一步将要做什么。"
 },
 		{	question: "开发团队成员的变动：",
 			answerList: [	
@@ -239,7 +239,7 @@ $(document).ready(function(){
 						],
 			answer: 2,
 			image: "assets/images/q19.png",
-			answerText: "团队通常需要经过一些阶段才能达到良好的表现状态。" + "<br>" + "成员变动通常会降低凝聚力，导致短期内影响表现和产能。"
+			answerText: "团队通常需要磨合才能达到良好的表现状态。" + "<br>" + "成员变动通常会降低凝聚力，导致短期内影响表现和产能下降。"
 },
 		{	question: "冲刺规划会的时间盒是？",
 			answerList: [	
@@ -262,7 +262,7 @@ $(document).ready(function(){
 						],
 			answer: 2,
 			image: "assets/images/q21.jfif",
-			answerText: "Scrum建立在经验过程控制理论基础上经验主义断言，知识来自经验，并根据已知知识做出决策支撑。" + "<br>" + "经验过程控制的每个实施的三个支柱：透明性，检查和调整。"
+			answerText: "Scrum是建立在经验主义基础上的过程控制理论，知识来自经验，并根据已有知识做决策支撑。" + "<br>" + "经验过程控制实施的三支柱：透明、检查和调整。"
 },
 		{	question: "冲刺何时结束（选择最佳答案）",
 			answerList: [	
@@ -277,11 +277,11 @@ $(document).ready(function(){
 },
 		{	question: "谁对产品积压表拥有最终决定权？ （选择最佳答案）",
 			answerList: [	
-						"A. 产品负责人",
-						"B. CEO",
-						"C. 敏捷负责人",
-						"D. 开发团队",
-						"E. 利益相干者"
+						"A. 产品负责人。",
+						"B. CEO。",
+						"C. 敏捷负责人。",
+						"D. 开发团队。",
+						"E. 利益相干者。"
 						],
 			answer: 0,
 			image: "assets/images/q23.jpg",
