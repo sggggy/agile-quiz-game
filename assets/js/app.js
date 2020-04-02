@@ -27,10 +27,10 @@ $(document).ready(function(){
 	var answered; 
 	var userSelect;
 	var messages = {
-		correct: "回答正确"+ "<br>" +'"now discover your strengths"',
-		incorrect: "回答错误" + "<br>" + '"Sometimes You Win--Sometimes You Learn"',
+		correct: "回答正确"+ "<br>" +'"Now,discover your strengths!"',
+		incorrect: "回答错误" + "<br>" + '"Well,Sometimes You Win--Sometimes You Learn"',
 		endTime: "时间到" + "<br>" + "持续学习，持续改善。",
-		finished: "只是做题是无法达到敏捷的，带着团队一起训练吧。"
+		finished: "只是做题是无法达到敏捷的，带着团队训练吧。"
 	};
 
 	//All questions inside an array of objects
@@ -44,7 +44,7 @@ $(document).ready(function(){
 						],
 			answer: 2,
 			image: "assets/images/q1.jpg",
-			answerText: "敏捷负责人所要保障的是——"+ "<br>" + "开发团队成员在24小时内完成至少一次每日Scrum仪式。"
+			answerText: "敏捷负责人所要保障的是—"+ "<br>" + "开发团队成员在24小时内发生至少1次每日Scrum事件。"
 		},
 		{	question: "当多个团队开发同一款产品时，每个团队应该维护各自独立的产品积压表。",
 			answerList: [	
@@ -53,7 +53,7 @@ $(document).ready(function(){
 						],
 			answer: 1,
 			image: "assets/images/q2.jpg",
-			answerText: "无论有多少个团队，一款产品只使用一个产品积压表。" + "<br>" + "如果存在多个积压表，会导致开发团队无法判断需要优先完成什么内容。"
+			answerText: "无论有多少个团队，1款产品只使用1个产品积压表。" + "<br>" + "如果存在多个积压表，会导致开发团队无法判断需要优先完成什么内容。"
 		},
 		{	question: "选择下列对Scrum理解错误的一项：",
 			answerList: [	
@@ -65,7 +65,7 @@ $(document).ready(function(){
 						],
 			answer: 1,
 			image: "assets/images/q3.png",
-			answerText: "Scrum中的每个组件都服务某个具体目的，有赖于对Scrum各个组件的充分运用，这样才能提升开发复杂产品的成功率。" + "<br>" + "通过不断明确增量的价值，团队能够快速发现和响应产品反馈，并迅速调整。"
+			answerText: "Scrum中的每个事件都服务某个具体目的，有赖于对Scrum各个事件的充分运用，才能提升开发复杂产品的成功率。" + "<br>" + "通过不断明确增量的价值，团队能够快速发现和响应产品反馈，并迅速调整。"
 		},
 		{	question: "开发团队在冲刺中不应该被打断冲刺目标需要保持完整性这些条件可以促进创造力、质量和生产力（以下哪个答案不对？）",
 			answerList: [
@@ -76,7 +76,7 @@ $(document).ready(function(){
 						],
 			answer: 2,
 			image: "assets/images/q4.jpg",
-			answerText: "冲刺积压表可视化开发团队为满足冲刺目标，所确定的所有工作内容。" + "<br>" + "开发团队在冲刺期间会修改冲刺积压表，所以冲刺积压表会在冲刺期间不断变化。"
+			answerText: "冲刺积压表可视化开发团队为满足冲刺目标，而确定的所有工作内容。" + "<br>" + "开发团队在冲刺期间会修改冲刺积压表，所以冲刺积压表会在冲刺期间不断变化。"
 		},		
 		{	question: "组织决定采用Scrum，但是管理层希望将术语更改为符合已经在使用的术语。如果这样做会发生什么？",
 			answerList: [
@@ -87,7 +87,7 @@ $(document).ready(function(){
 						],
 			answer: 3,
 			image: "assets/images/q5.jpg",
-			answerText: ""
+			answerText: "呵呵"
 		},
 		{	question: "开发团队需要为单次冲刺，从产品积压表中选择多少工作？",
 			answerList: [	
@@ -118,18 +118,18 @@ $(document).ready(function(){
 						],
 			answer: 0,
 			image: "assets/images/q8.png",
-			answerText: "Scrum的核心是冲刺，即一个月或更短的时间盒，在此期间创建满足“DoD”、可用的，且可用于发布的产品增量。"
+			answerText: "Scrum的核心是冲刺，即1个月或更短的时间盒，在此期间创建满足“DoD”、可用的，且可用于发布的产品增量。"
 		},
 		{	question: "CEO要求开发团队在正在进行的冲刺中添加“非常重要”的项目，开发团队应该做什么？",
 			answerList: [	
 						"A. 无需任何调整即可将项目添加到当前的冲刺中。",
 						"B. 通知产品负责人，以便他/她可以与CEO沟通需求。",
-						"C. 将该项目添加到当前的冲刺中，并移除一个大小相等的项目。",
+						"C. 将该项目添加到当前的冲刺中，并移除1个大小相等的项目。",
 						"D. 将项目添加到下一个冲刺中。"
 						],
 			answer: 1,
 			image: "assets/images/q9.jpg",
-			answerText: "冲刺积压表中有开发团队与产品负责人一起选出的最有价值项，这些项目符合冲刺目标。请勿进行任何危及冲刺目标的更改。" + "<br>" + "Scrum团队外的任何人都不能对开发团队（冲刺积压表）和产品所有者（产品积压表）进行更改。"
+			answerText: "冲刺积压表中有开发团队与产品负责人一起选出的符合冲刺目标的最有价值项。请勿进行任何危及冲刺目标的更改。" + "<br>" + "Scrum团队外的任何人都不能对开发团队（冲刺积压表）和产品所有者（产品积压表）进行更改。"
 		},		
 		{	question: "下面哪个角色不属于一个Scrum团队？",
 			answerList: [	
@@ -146,7 +146,7 @@ $(document).ready(function(){
 			answerList: [	
 						"A. 足够短，以使产品负责人可接受业务风险。",
 						"B. 足够短，以将开发工作与其他业务事件同步。",
-						"C. 不超过一个月。",
+						"C. 不超过1个月。",
 						"D. 上述都对。"
 						],
 			answer: 3,
@@ -162,7 +162,7 @@ $(document).ready(function(){
 						],
 			answer: 3,
 			image: "assets/images/q12.jpg",
-			answerText: "最佳开发团队规模应该大小适中。" + "<br>" + "少于三个人的开发团队会减少互动，并导致生产力低下；" + "<br>" + "九个以上成员的团队会需要太多的协调。"
+			answerText: "最佳开发团队规模应该大小适中。" + "<br>" + "少于3个人的开发团队会减少互动，并导致生产力低下；" + "<br>" + "9个以上成员的团队会需要太多的协调。"
 },
 		{	question: "以下哪种服务最适合敏捷负责人实现每日Scrum？",
 			answerList: [	
@@ -190,12 +190,12 @@ $(document).ready(function(){
 			answerList: [	
 						"A. 想多长就多长。",
 						"B. 2小时。",
-						"C. 为期一月的冲刺需4小时评审为期更短的冲刺，评审会一般也会更短。",
-						"D. 一整天。"
+						"C. 为期1月的冲刺需4小时评审为期更短的冲刺，评审会一般也会更短。",
+						"D. 1整天。"
 						],
 			answer: 2,
 			image: "assets/images/q15.jfif",
-			answerText: "冲刺评审会是个时间盒，一个月长度的冲刺，会议时长为四小时。对于较短的冲刺，时间通常也较短。"
+			answerText: "冲刺评审会是个时间盒，1个月长度的冲刺，会议时长为4小时。" + "<br>" + "对于较短的冲刺，时间通常也较短。"
 },
 		{	question: "每日Scrum的时间盒是多少？",
 			answerList: [	
@@ -206,7 +206,7 @@ $(document).ready(function(){
 						],
 			answer: 3,
 			image: "assets/images/q16.jfif",
-			answerText: "每日Scrum的时长为15分钟，但不会随冲刺长度而变化。"
+			answerText: "每日Scrum的时长为15分钟，但不会因冲刺长度变化而变化。"
 },
 		{	question: "谁创建“完成”的定义？",
 			answerList: [	
@@ -216,8 +216,8 @@ $(document).ready(function(){
 						"D. 开发组织（如果没有开发组织，则为开发团队）。"
 						],
 			answer: 3,
-			image: "assets/images/q17.jpg",
-			answerText: "“完成”定义由开发组织约定，作为标准或准则的一部分，所有Scrum团队都必须遵循。" + "<br>" + "Scrum团队的开发团队可通过针对产品或上下文特定元素对其进行补充。" + "<br>" + "如果“完成”不是开发组织规定，则Scrum团队的开发团队必须定义适合该产品的“完成”定义。"
+			image: "assets/images/q17.jfif",
+			answerText: "“完成”的定义由开发组织约定，作为标准或准则的一部分，所有Scrum团队都必须遵循。" + "<br>" + "Scrum团队的开发团队可通过针对产品或上下文特定元素对其进行补充。" + "<br>" + "如果“完成”不由开发组织规定，则Scrum团队的开发团队必须定义适合该产品的“完成”定义。"
 },
 		{	question: "谁应该最了解实现业务目标或发布的进度，并且能够最清楚地解释替代方案？",
 			answerList: [	
@@ -228,7 +228,7 @@ $(document).ready(function(){
 						],
 			answer: 0,
 			image: "assets/images/q18.jpg",
-			answerText: "产品负责人是负责管理产品积压表的唯一人员，负责保障产品积压表对所有人都可见、透明和清晰，并说明Scrum团队下一步将要做什么。"
+			answerText: "产品负责人是负责管理产品积压表的唯一人员，" + "<br>" + "负责保障产品积压表对所有人都可见、透明和清晰，" + "<br>" + "并说明Scrum团队下一步将要做什么。"
 },
 		{	question: "开发团队成员的变动：",
 			answerList: [	
@@ -244,13 +244,13 @@ $(document).ready(function(){
 		{	question: "冲刺规划会的时间盒是？",
 			answerList: [	
 						"A. 4小时。",
-						"B. 一个月。",
-						"C. 一个月时长的冲刺，会议时间盒为8小时更短周期的冲刺，计划会通常耗时也更短。",
+						"B. 1个月。",
+						"C. 1个月时长的冲刺，会议时间盒为8小时。更短周期的冲刺，计划会通常耗时也更短。",
 						"D. 不限制，直到问题解决为止。"
 						],
 			answer: 2,
 			image: "assets/images/q20.png",
-			answerText: "冲刺计划会的时间盒，以一个月时长的冲刺为例，会议时长8小时。" + "<br>" + "对于较短时长的冲刺，计划会时间通常会更短。"
+			answerText: "冲刺计划会的时间盒，以1个月时长冲刺为例，会议时长上限8小时。" + "<br>" + "对于较短周期冲刺，计划会时间通常更短。"
 },
 		{	question: "经验过程控制的三支柱是：",
 			answerList: [	
@@ -262,7 +262,7 @@ $(document).ready(function(){
 						],
 			answer: 2,
 			image: "assets/images/q21.jfif",
-			answerText: "Scrum是建立在经验主义基础上的过程控制理论，知识来自经验，并根据已有知识做决策支撑。" + "<br>" + "经验过程控制实施的三支柱：透明、检查和调整。"
+			answerText: "Scrum是建立在经验主义基础上的过程控制理论，" + "<br>" + "知识来自经验，并根据已有知识做决策支撑。" + "<br>" + "经验过程控制实施的三支柱：透明、检查和调整。"
 },
 		{	question: "冲刺何时结束（选择最佳答案）",
 			answerList: [	
@@ -286,6 +286,72 @@ $(document).ready(function(){
 			answer: 0,
 			image: "assets/images/q23.jpg",
 			answerText: "产品负责人是负责管理产品积压表的唯一人员。"
+},
+{	question: "为什么每日Scrum会在同一时间和同一地点举行？（选择最佳答案）",
+			answerList: [	
+						"A. 产品负责人要求的。",
+						"B. 会议室很难预订，因此要提前预订。",
+						"C. 这样就可以给空间命名。",
+						"D. 一致性能降低复杂性。"						
+						],
+			answer: 3,
+			image: "assets/images/q24.jfif",
+			answerText: "每日Scrum在同一时间和地点举行，以减少复杂性。"
+},
+{	question: "下列哪条陈述最能描述冲刺评审？（选择最佳答案）",
+			answerList: [	
+						"A. 冲刺末尾时要展示产品，供组织中的每个人检查完成的工作。",
+						"B. 这是控制冲刺期间开发团队活动的一种机制。",
+						"C. 这是Scrum团队和利益相关者检查冲刺结果并弄清下一步该怎么做的时机。"
+						],
+			answer: 2,
+			image: "assets/images/q25.jfif",
+			answerText: "冲刺作为其他事件的容器，" + "<br>" + "Scrum所包含的每个事件，都是检查与调整的时机。"
+},
+{	question: "每个事件都对应一个时间盒，该怎么理解？（选择最佳答案）",
+			answerList: [	
+						"A. 事件必须在给定的时间发起。",
+						"B. 事件必须在固定的事件发起。",
+						"C. 事件需要设定时长下限。",
+						"D. 事件需要设定时长上限。"						
+						],
+			answer: 3,
+			image: "assets/images/q26.jpg",
+			answerText: "时间盒是举办事件的最大持续时长。"
+},
+{	question: "产品积压表要如何排序？（选择最佳答案）",
+			answerList: [	
+						"A. 待办项随机排序即可。",
+						"B. 产品负责人负责给出最合适的排序。",
+						"C. 基于风险控制，越安全的项目放顶部，越危险的项目放底部。",
+						"D. 基于规模，小项目放顶部，大项目放底部。",
+						"E. 价值最少的项目放顶部，价值最大的项目放底部。"						
+						],
+			answer: 1,
+			image: "assets/images/q27.jpg",
+			answerText: "产品负责人将决定最有意义的事情，以最优化开发团队所完成工作的价值。"
+},
+{	question: "谁负责在冲刺期间管理工作进度？（选择最佳答案）",
+			answerList: [	
+						"A. 开发团队。",
+						"B. 团队中最初级的成员。",
+						"C. 敏捷负责人。",
+						"D. 产品负责人。"
+						],
+			answer: 0,
+			image: "assets/images/q28.jfif",
+			answerText: "开发团队使用每日Scrum来检查实现冲刺目标的进度，" + "<br>" + "也检查为了达成冲刺目标的相关工作项的进度。"
+},
+{	question: "根据《Scrum指南》，下列哪个事件设置了时间盒限制？",
+			answerList: [	
+						"A. 发布测试会。",
+						"B. 每日Scrum会。",
+						"C. 策划冲刺会。",
+						"D. 代码评审会。"
+						],
+			answer: 1,
+			image: "assets/images/q29.jfif",
+			answerText: "《Scrum指南》指出，所有“Scrum事件”都有时间限制。" + "<br>" + "时长1个月或少于1个月的冲刺，冲刺计划会最多8个小时，" + "<br>" + "每日Scrum限制在15分钟，Sprint评审会最多4个小时，冲刺回顾会最多3个小时。"
 },
 
 	];
